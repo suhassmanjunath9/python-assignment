@@ -1,0 +1,15 @@
+def fact(a): #define a function 
+    if (a<0): #consider all possible input and use if else statements
+        print("factorial doesnt exists");
+    elif (a==0):
+        print("factorial of 0 is 1")
+    else:
+        facto=1; #logic to calculate factorial
+        for i in range (1,a+1): #define rangle
+            facto=i*facto
+        return facto
+        result=facto
+        print(f"factorial:{result}");#print result
+a=int(input('enter a number'))#call the function with input
+fact(a)
+        
