@@ -1,0 +1,22 @@
+import math
+
+#  Ask the user for a number as input.
+user_input = input("Please enter a number: ")
+
+# Convert the input string to a floating-point number.
+number = float(user_input)
+
+# Calculate the square root of the number.
+square_root = math.sqrt(number)
+
+# Calculate the natural logarithm of the number.
+natural_log = math.log(number)
+
+# Calculate the sine of the number (assuming it's in radians).
+sine_value = math.sin(number)
+
+# Display the calculated results.
+print(f"\nResults for the number {number}:")
+print(f"Square Root: {square_root}")
+print(f"Natural Logarithm (log base e): {natural_log}")
+print(f"Sine (in radians): {sine_value}")
