@@ -1,0 +1,4 @@
+sum = 0 #initialise a random variable 
+for i in range(1, 51): #set the range for "for" loop
+    sum += i
+print(f"sum of number from 1 to 50 is: {sum}") #print the result
