@@ -1,0 +1,28 @@
+try:
+    with open('output.txt', 'w') as file:
+        user_input = input("Enter some text to write to the file: ")
+        file.write(user_input + "\n")
+    print("Content successfully written to output.txt")
+except Exception as e:
+    print(f"An error occurred while writing to the file: {e}")
+    
+# 2. Append additional data to the same file.
+# The 'a' mode opens the file for appending. This adds new content
+try:
+    with open('output.txt', 'a') as file:
+        additional_data = "This is appended data."
+        file.write(additional_data + "\n")
+    print("Additional data successfully appended to output.txt")
+except Exception as e:
+    print(f"An error occurred while appending to the file: {e}")
+# Read and display the final content of the file.
+# The 'r' mode opens the file for reading.
+try:
+    with open('output.txt', 'r') as file:
+        file_content = file.read()
+        print("\n--- Final Content of output.txt ---")
+        print(file_content)
+except FileNotFoundError:
+    print("The file output.txt was not found.")
+except Exception as e:
+    print(f"An error occurred while reading the file: {e}")
