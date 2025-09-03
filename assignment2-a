@@ -1,0 +1,7 @@
+#take input from user;
+number=int(input('enter a number') 
+#logic is to check its divisiblity by 2
+if (number % 2 == 0)
+    print(number' is even number');
+else 
+    print(number'is odd number')
