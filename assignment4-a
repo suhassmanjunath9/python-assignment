@@ -1,0 +1,18 @@
+# The name of the file to be read.
+file_name = "sample.txt"
+# such as the file not being found.
+try:
+    # 1. Open and read the text file. The 'with' statement ensures the
+    with open(file_name, 'r') as file:
+        print(f"Reading file: {file_name}\n")
+        
+        # 2. Print its content line by line.
+        for line in file:
+            # The .strip() method removes leading/trailing whitespace,
+            # including the newline character at the end of each line.
+            print(line.strip())
+
+except FileNotFoundError:
+    # 3. Handle errors gracefully if the file does not exist.
+    print(f"Error: The file '{file_name}' was not found.")
+    print("Please make sure the file exists in the same directory as the script.")
