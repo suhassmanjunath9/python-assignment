@@ -1,0 +1,9 @@
+list = {'suhas':'9','sahitya':'10','apoo':'10','veeru':'5'} #create a list
+a = input('enter the student\'s name') # take user's input
+a=a.lower() #if the input has upper case , change it
+marks = list.get(a) # get the marks
+
+if marks:
+    print(f'{a}\'s marks: {marks}')#print the marks
+else:
+    print(f'student name not found: {a}')#else print not found
